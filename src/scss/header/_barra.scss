@@ -1,0 +1,32 @@
+@use "../variables/variables" as v;
+@use "../variables/mixins" as m;
+
+.barra {
+ display: flex;
+ flex-direction: column;
+ margin: 0 2rem;
+ @include m.tablet{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+
+ .logo{
+    width: 50%;
+    margin: 0 auto;
+
+    @include m.tablet{
+        width: 20rem;
+        margin: 0;
+    }
+
+    &:hover{
+        color: v.$color_secundario;
+    }
+
+    &.activo{
+        color: v.$color_secundario;
+    }
+ }
+}
