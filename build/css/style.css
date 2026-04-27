@@ -322,14 +322,16 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  background-color: #DEB887;
 }
 
 p {
   color: #000000;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
-.container {
+.contenedor {
   max-width: 1200px;
   margin: 0 auto;
   width: 95%;
@@ -366,6 +368,32 @@ h3 {
 
 .bg-principal {
   background-color: #5e311e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 5rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  color: #5e311e;
+}
+h2 span {
+  color: #c39c63;
+  font-size: 1.8rem;
+  display: block;
+}
+
+h3 {
+  font-size: 3.2rem;
 }
 
 .header {
@@ -462,5 +490,16 @@ h3 {
   .barra .logo {
     width: 20rem;
     margin: 0;
+  }
+}
+
+.contenido-principal {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .contenido-principal {
+    padding: -10rem;
+    position: relative;
   }
 }
