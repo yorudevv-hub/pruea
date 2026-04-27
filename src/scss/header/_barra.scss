@@ -1,32 +1,24 @@
 @use "../variables/variables" as v;
 @use "../variables/mixins" as m;
 
-.barra {
- display: flex;
- flex-direction: column;
- margin: 0 2rem;
- @include m.tablet{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
- }
-
- .logo{
-    width: 50%;
+.barra{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-
+    max-width: 1100px;
     @include m.tablet{
-        width: 20rem;
-        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
     }
 
-    &:hover{
-        color: v.$color_secundario;
+    .logo{
+       width: 50%;
+       margin: 0 auto;
+        @include m.tablet{
+          width: 20rem;
+          margin: 0;
+        }
     }
-
-    &.activo{
-        color: v.$color_secundario;
-    }
- }
 }
