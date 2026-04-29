@@ -2,6 +2,8 @@
 // css , sass
 const { dest, watch, series, src } = require("gulp");
 const autoPrefixer = require("gulp-autoprefixer").default;
+const postcss = require("gulp-postcss");
+const cssnano = require("cssnano");
 const sass = require("gulp-sass")(require("sass"));
 
 
@@ -35,6 +37,7 @@ function css(done) {
   src("src/scss/style.scss")
     .pipe(sass())
     .pipe(autoPrefixer({ autoPrefixer}))
+    .pipe(postcss([cssnano()]))
     .pipe(dest("build/css"));
 
   done();
