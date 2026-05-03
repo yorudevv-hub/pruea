@@ -35,7 +35,11 @@ h2{
         background-size: 10rem;
     }
 
-    .heading-blanco{
+    
+}
+
+
+.heading-blanco{
     @extend h2;
     color: v.$blanco;
     span{
@@ -47,8 +51,6 @@ h2{
         display: none;
     }
 }
-}
-
 
 
 h3{
