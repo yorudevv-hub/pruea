@@ -339,6 +339,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 img {
@@ -374,6 +375,14 @@ ul {
 
 .bg-principal {
   background-color: #451d0a;
+}
+
+.bg-withe {
+  background-color: #FFFFFF;
+}
+
+.margin-negativo-10 {
+  margin-top: -10rem;
 }
 
 h1, h2, .heading-blanco, h3, h4, h5, h6 {
@@ -676,4 +685,66 @@ h3 {
   color: #FFFFFF;
   font-size: 4rem;
   font-weight: 700;
+}
+
+.nuestros-testimoniales {
+  padding: 10rem 2rem;
+}
+@media (min-width: 768px) {
+  .nuestros-testimoniales {
+    padding: 10rem;
+  }
+}
+.nuestros-testimoniales .testimonial {
+  background-color: #D2B48C;
+  padding: 2rem 4rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.nuestros-testimoniales .testimonial .autor {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  color: #5a3c15;
+  font-family: "Bona Nova", serif;
+}
+
+.footer {
+  background-color: #451d0a;
+}
+.footer .footer-contenido {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer .copyrigth {
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.footer-box {
+  font-family: "Bona Nova", serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-box {
+    margin-bottom: 0;
+  }
+}
+.footer-box h3 {
+  font-family: "Bona Nova", serif;
+  margin: 0 0 1rem 0;
+  font-size: 2.4rem;
+  color: #5c3b0b;
+}
+.footer-box p,
+.footer-box a {
+  font-size: 2rem;
+  margin: 0;
 }
