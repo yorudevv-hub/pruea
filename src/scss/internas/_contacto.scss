@@ -4,7 +4,7 @@
 .contenido-contacto {
   @include m.tablet {
     @include m.grid(2, 5rem);
-    background-image: url(../img/granos-cafe.jpg);
+    background-image: url(../img/granos_cafe.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 40%;
@@ -17,7 +17,6 @@
     &:last-of-type {
       margin-bottom: 0;
     }
-
     label {
       text-transform: uppercase;
       display: block;
